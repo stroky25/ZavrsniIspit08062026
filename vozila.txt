@@ -1,0 +1,3 @@
+Automobil(brojVrata=5, godinaProizvodnje=2021, marka='BMW', registarskiBroj='RI1550Z')
+Motocikl(tipMotora='DIESEL', godinaProizvodnje=2020, marka='YAMAHA', registarskiBroj='ZG5517B')
+Automobil(brojVrata=2, godinaProizvodnje=1980, marka='MOSKVICH', registarskiBroj='ZG111A')

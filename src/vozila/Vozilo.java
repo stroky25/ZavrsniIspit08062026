@@ -14,7 +14,7 @@ public class Vozilo {
         this.registarskiBroj = registarskiBroj;
     }
 
-    public void ucitajPodatke (godinaProizvodnje, String marka, String registarskiBroj) throws NeispravniPodaciException {
+    public void ucitajPodatke (int godinaProizvodnje, String marka, String registarskiBroj) throws NeispravniPodaciException {
         if (godinaProizvodnje < 0) {
             throw new NeispravniPodaciException("Godina proizvodnje ne može biti negativna!");
         }
@@ -35,9 +35,6 @@ public class Vozilo {
         return registarskiBroj;
     }
 
-    public String
-
-    @Override
     public String toString() {
         return "Vozilo{" + "godina Proizvodnje=" + godinaProizvodnje + ", registarski Broj='" + registarskiBroj + '\'' +
                 ", marka='" + marka + '\'' + '}';

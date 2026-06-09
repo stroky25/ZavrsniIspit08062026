@@ -1,7 +1,9 @@
 package vozila;
 
-public class NeispravniPodaciException extend Exception {
-    public NeispravniPodaciException(String poruka) {
+public class NeispravniPodaciException extends Exception {
 
+    public NeispravniPodaciException(String poruka) {
+        super(poruka);
     }
 }
+
