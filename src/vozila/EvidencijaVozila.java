@@ -29,6 +29,7 @@ public class EvidencijaVozila {
         bw.close();
     }
     public void ucitajPodatkeIzDatoteke (String datoteka) throws IOException, NeispravniPodaciException {
+        vozila.clear();
         BufferedReader br = new BufferedReader(new FileReader(datoteka));
         String red;
         while ((red = br.readLine()) != null) {
@@ -38,7 +39,7 @@ public class EvidencijaVozila {
             } else if (podaci[0].equals("MOTOCIKL")) {
                 vozila.add(new Motocikl(podaci[1], podaci[2], Integer.parseInt(podaci[3]),podaci[4]));
             }
-            br.close();;
         }
+        br.close();
     }
 }

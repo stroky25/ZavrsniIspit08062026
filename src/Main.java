@@ -14,12 +14,14 @@ public class Main {
 
         EvidencijaVozila evidencija = new EvidencijaVozila();
         try {
-            if (datoteka.exists()) {
-                System.out.println("Podaci uspješno učitani iz datoteke.");
-            } else {
-                System.out.println("Datoteka ne postoji ili je prazna.");
-            }
-            //evidencija.ucitajPodatkeIzDatoteke("vozila.txt");
+            evidencija.ucitajPodatkeIzDatoteke ("vozila.txt");
+            System.out.println("Podaci uspješno učitani iz datoteke.");
+//            if (datoteka.exists()) {
+//                System.out.println("Podaci uspješno učitani iz datoteke.");
+//            } else {
+//                System.out.println("Datoteka ne postoji ili je prazna.");
+//            }
+
         } catch (Exception e) {
             System.out.println("Datoteka ne postoji ili je prazna.");
         }
