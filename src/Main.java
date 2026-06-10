@@ -1,8 +1,8 @@
 import vozila.*;
 
 
-import java.io.File;
-import java.io.IOException;
+//import java.io.File;
+//import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
@@ -10,8 +10,8 @@ public class Main {
 
         Scanner mojScanner = new Scanner(System.in);
         String menu;
-        File datoteka = new File("vozila.txt");
-
+//        File datoteka = new File("vozila.txt");
+//
         EvidencijaVozila evidencija = new EvidencijaVozila();
         try {
             evidencija.ucitajPodatkeIzDatoteke ("vozila.txt");
