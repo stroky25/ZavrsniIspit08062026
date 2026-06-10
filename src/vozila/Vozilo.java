@@ -36,8 +36,8 @@ public class Vozilo {
     }
 
     public String toString() {
-        return "Vozilo{" + "godina Proizvodnje=" + godinaProizvodnje + ", registarski Broj='" + registarskiBroj + '\'' +
-                ", marka='" + marka + '\'' + '}';
+        return "Vozilo(" + "godina Proizvodnje=" + godinaProizvodnje + ", registarski Broj=" + registarskiBroj +
+                ", marka='" + marka  + " + "+ ")" + ";";
     }
 
     public void  prikaziPodatke() {

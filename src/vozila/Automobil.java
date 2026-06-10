@@ -29,8 +29,8 @@ public class Automobil extends Vozilo {
 
     @Override
     public String toString() {
-        return "Automobil(" + "brojVrata=" + brojVrata + ", godinaProizvodnje=" + godinaProizvodnje +
-                ", marka='" + marka + '\'' + ", registarskiBroj='" + registarskiBroj + '\'' + ')';
+        return "Automobil(" + "brojVrata=" + brojVrata + ", " + " godinaProizvodnje=" + godinaProizvodnje + ", " +
+                " marka='" + marka + ", " +  " registarskiBroj='" + registarskiBroj + "'" +  ')' + ';' ;
     }
 }
 

@@ -22,7 +22,7 @@ public class Motocikl extends Vozilo{
 
     @Override
     public String toString() {
-        return "Motocikl(" + "tipMotora='" + tipMotora + '\'' + ", godinaProizvodnje=" + godinaProizvodnje +
-                ", marka='" + marka + '\'' + ", registarskiBroj='" + registarskiBroj + '\'' + ')';
+        return "Motocikl(" + "tipMotora='" + tipMotora + ", " + " godinaProizvodnje=" + godinaProizvodnje + ", " +
+                " marka='" + marka + ", " + " registarskiBroj='" + registarskiBroj  + ")"+ "';";
     }
 }
