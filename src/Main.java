@@ -1,6 +1,8 @@
 import vozila.*;
 
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
@@ -8,11 +10,16 @@ public class Main {
 
         Scanner mojScanner = new Scanner(System.in);
         String menu;
+        File datoteka = new File("vozila.txt");
 
         EvidencijaVozila evidencija = new EvidencijaVozila();
         try {
-            evidencija.ucitajPodatkeIzDatoteke("vozila.txt");
-            System.out.println("Podaci uspješno učitani iz datoteke.");
+            if (datoteka.exists()) {
+                System.out.println("Podaci uspješno učitani iz datoteke.");
+            } else {
+                System.out.println("Datoteka ne postoji ili je prazna.");
+            }
+            //evidencija.ucitajPodatkeIzDatoteke("vozila.txt");
         } catch (Exception e) {
             System.out.println("Datoteka ne postoji ili je prazna.");
         }
@@ -33,6 +40,9 @@ public class Main {
                         String registarskiBroj = mojScanner.nextLine();
                         System.out.print("Unesite godinu proizvodnje: ");
                         int godinaProizvodnje = Integer.parseInt(mojScanner.nextLine());
+                        if (godinaProizvodnje < 0) {
+                            throw new NeispravniPodaciException("Godina proizvodnje ne može biti negativna!");
+                        }
                         System.out.print("Unesite broj vrata: ");
                         int brojVrata = Integer.parseInt(mojScanner.nextLine());
                         if (brojVrata < 0) {
